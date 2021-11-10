@@ -7,13 +7,19 @@ class Table {
     this.C=[0,...C,...new Array(nCon).fill(0)];
     this.b=b;
     let ideA=ide(nCon);
-    this.A=A.map((a,i)=>a.push(...ideA[i]));
-    this.arr=this.A.forEach((a,i)=>a.unshift(b[i]));
+    
+    this.A=A.slice(0);
+    this.A.forEach((a,i)=>a.push(...ideA[i]));
+
+    this.arr=this.A.slice(0);
+    this.arr.forEach((a,i)=>a.unshift(b[i]));
+    
     this.arr.push(this.C);
     
   }
 
-  showT(arr){
+  show(){
+    let arr=this.arr;
     console.table(
     arr.reduce((ac,e,i)=>
       {ac[i!=arr.length-1?'x'+(i+3):'z']=new line(e);return ac}
