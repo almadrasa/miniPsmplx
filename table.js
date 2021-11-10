@@ -1,6 +1,6 @@
 class Table {
   constructor(
-    nVar=2,nCon=3,A,C,b
+    nVar=2,nCon=3,C,A,b
     ){
     this.nVar=nVar;
     this.nCon=nCon;
@@ -8,7 +8,8 @@ class Table {
     this.b=b;
     let ideA=ide(nCon);
     this.A=A.map((a,i)=>a.push(...ideA[i]));
-    this.arr=[];
+    this.arr=this.A.forEach((a,i)=>a.unshift(b[i]));
+    this.arr.push(this.C);
     
   }
 
@@ -36,3 +37,6 @@ function ide(nCon=3){
   }
   return arr
 }
+
+
+module.exports=Table;
