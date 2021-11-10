@@ -16,10 +16,17 @@ class Table {
     this.arr.forEach((a,i)=>a.unshift(b[i]));
     
     this.arr.push(this.C);
-    
   }
 
-  
+  calcPivo(){
+    let c=this.arr[this.nCon];
+    this.pvJ=c.indexOf(Math.max(...c));
+    let b=this.arr.map((e,i)=>
+      e[this.pvJ]>0?this.arr[i][0]/e[this.pvJ]:Number.POSITIVE_INFINITY
+    );
+    b.pop();
+    this.pvI=b.indexOf(Math.min(...b));
+  }
 
   show(){
     let arr=this.arr;
