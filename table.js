@@ -7,7 +7,8 @@ class Table {
     this.C=[0,...C,...new Array(nCon).fill(0)];
     this.b=b;
     let ideA=ide(nCon);
-    
+    this.pvI=null;
+    this.pvJ=null;
     this.A=A.slice(0);
     this.A.forEach((a,i)=>a.push(...ideA[i]));
 
@@ -18,12 +19,19 @@ class Table {
     
   }
 
+  
+
   show(){
     let arr=this.arr;
+    arr=arr.reduce((ac,e,i)=>
+      {
+        let indx=i!=arr.length-1?'x'+(i+3):'z';
+        if(this.pvJ&&i==this.pvI)indx='x'+this.pvJ;
+        ac[indx]=new line(e);return ac}
+    ,{});
+
     console.table(
-    arr.reduce((ac,e,i)=>
-      {ac[i!=arr.length-1?'x'+(i+3):'z']=new line(e);return ac}
-    ,{})
+    arr
     )    
   }
 }
