@@ -12,16 +12,16 @@ class Table {
     this.pvI=null;
     this.pvJ=null;
     this.pivo=null;
-    this.A=A.slice(0);
+    this.A=A.map(r=>r.slice());
     this.A.forEach((a,i)=>a.push(...ideA[i]));
 
-    this.arr=this.A.slice(0);
+    this.arr=this.A.map(r=>r.slice());
     this.arr.forEach((a,i)=>a.unshift(b[i]));
     
     this.arr.push(this.C);
     this.tables=[this.ar2O(this.arr)];
     this.o=this.tables[0];
-     this.solve();
+    // this.solve();
   }
 
   calcPivo(){
@@ -55,6 +55,7 @@ class Table {
       let s=this.arr.map((e,i)=>e[0]);
       //console.log('s:',s);
       //console.log('S:',this.S);
+      this.show();
       let lo=this.S.filter(e=>e).map((e,i)=>'x'+e+' = '+s[i]);
       console.log(lo.join('\n'));
       this.z=s.pop();
@@ -85,10 +86,11 @@ class Table {
   }
 
   show(obj=this.o){
+    //console.log(obj)
     console.table(obj);
   }
   showAll(){
-    this.tables.forEach((e,i)=>console.log(i+1),console.table(obj));
+    this.tables.forEach((e,i)=>{console.log(i+1),console.table(e)});
   }  
 }
 
@@ -111,4 +113,7 @@ function ide(nCon=3){
 function n(n){
   return Number(n.toFixed(2));
 }
+
+
+
 module.exports=Table;
