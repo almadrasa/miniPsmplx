@@ -48,7 +48,8 @@ function exmple(){
 function calc(){
   input();
   let nc=Number(readlineSync.question('nombre de contrainte: ').trim());
-  let t=readlineSync.question(bg('C')+' = ');
+  process.stdout.write(bg('C')+' = ')
+  let t=readlineSync.question('');
   let C=t.trim().replace(/\s+/g,' ')
         .split(' ').map(e=>Number(e));
 
@@ -59,7 +60,8 @@ function calc(){
     A[i]=t.trim().replace(/\s+/g,' ')
           .split(' ').map(e=>Number(e));    
   }
-  t=readlineSync.question(bg('b')+' = ');
+  process.stdout.write(bg('b')+' = ')
+  t=readlineSync.question('');
   let b=t.trim().replace(/\s+/g,' ')
         .split(' ').map(e=>Number(e));
   output();
