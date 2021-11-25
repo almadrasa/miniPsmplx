@@ -5,8 +5,17 @@ simplex algo implementation using javscript and Node.js
 
 ---
 ## how it works?
+ - convert PL to standard form
+ - in **C**, `0` at the end will added automatically
+ - in **A**, diagonal part will added automatically
+ - #### download:
+    download the [compiled version here](https://github.com/almadrasa/miniPsmplx/releases/download/v1.0.0/smplix_Hodayfa.exe) .
+    or check [release page](https://github.com/almadrasa/miniPsmplx/releases/tag/v1.0.0)
+ - #### live exemple:
 
----
+https://user-images.githubusercontent.com/34221874/143494738-c7e0a387-f5ec-4566-8dd8-317695fd58d2.mp4
+
+
 ## Requirements
 
 For development, you will only need Node.js and a node global package.
@@ -33,14 +42,6 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
     $ git clone https://github.com/almadrasa/miniPsmplx
     $ cd miniPsmplx
     $ npm install
-
-## Configure app
-
-Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
-
-- A setting;
-- Another setting;
-- One more setting;
 
 ## Running the project
 
