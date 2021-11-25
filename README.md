@@ -5,8 +5,12 @@ simplex algo implementation using javscript and Node.js
 
 ---
 ## how it works?
-
----
+ - convert PL to standard form
+ - in **C**, `0` at the end will added automatically
+ - in **A**, diagonal part will added automatically
+ - #### download:
+    download the [compiled version here](https://github.com/almadrasa/miniPsmplx/releases/download/v1.0.0/smplix_Hodayfa.exe) .
+    or check [release page](https://github.com/almadrasa/miniPsmplx/releases/tag/v1.0.0)
 ## Requirements
 
 For development, you will only need Node.js and a node global package.
