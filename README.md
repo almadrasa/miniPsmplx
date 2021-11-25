@@ -9,7 +9,8 @@ simplex algo implementation using javscript and Node.js
  - in **C**, `0` at the end will added automatically
  - in **A**, diagonal part will added automatically
  - #### download:
-    download the [compiled version here](https://github.com/almadrasa/miniPsmplx/releases/download/v1.0.0/smplix_Hodayfa.exe) .
+    download the compiled version for [**windows**](https://github.com/almadrasa/miniPsmplx/releases/download/v1.0.0/smplix_Hodayfa.exe) or [**linux**](https://github.com/almadrasa/miniPsmplx/releases/download/v1.0.0/smplix_Hodayfa_linux64.zip) .
+    
     or check [release page](https://github.com/almadrasa/miniPsmplx/releases/tag/v1.0.0)
  - #### live exemple:
 
