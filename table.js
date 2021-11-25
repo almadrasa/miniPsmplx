@@ -61,7 +61,7 @@ class Table {
       this.show();
       let lo=this.S.filter(e=>e).map((e,i)=>'x'+e+' = '+s[i]);
       console.log(lo.join('\n'));
-      this.z=s.pop();
+      this.z=s.pop()*-1;
       console.log('z = ',this.z);
     }else if(this.tables.length<6) this.solve();
     else console.log('no optimal solution')
