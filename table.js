@@ -46,7 +46,8 @@ class Table {
       e.forEach((x,j)=>{
         if(i==this.pvI||j==this.pvJ)return;
         let tn=x-n((e[this.pvJ]*this.pvL[j])/this.pivo);
-        tn=tn.toString().length>5?n(tn):tn;
+        let ts=tn.toString();
+        tn=ts.includes('.')&&ts.length>5?n(tn):tn;
         e[j]=tn;
       })
     });    
@@ -113,7 +114,7 @@ function ide(nCon=3){
 }
 
 function n(n){
-  console.log(n.toFixed(2),Number(n.toFixed(2)))
+  //console.log(n.toFixed(2),Number(n.toFixed(2)))
   return Number(n.toFixed(2));
 }
 
