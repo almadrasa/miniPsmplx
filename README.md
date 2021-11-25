@@ -1,12 +1,15 @@
 # miniPsmplx
-# Project Title
+#### by houdayfa
 
-A nice project with a nice description
+simplex algo implementation using javscript and Node.js 
+
+---
+## how it works?
 
 ---
 ## Requirements
 
-For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
+For development, you will only need Node.js and a node global package.
 
 ### Node
 - #### Node installation on Windows
@@ -23,32 +26,13 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
 
 - #### Other Operating Systems
   You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
-
-If the installation was successful, you should be able to run the following command.
-
-    $ node --version
-    v8.11.3
-
-    $ npm --version
-    6.1.0
-
-If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
-
-    $ npm install npm -g
-
-###
-### Yarn installation
-  After installing node, this project will need yarn too, so just run the following command.
-
-      $ npm install -g yarn
-
 ---
 
 ## Install
 
-    $ git clone https://github.com/YOUR_USERNAME/PROJECT_TITLE
-    $ cd PROJECT_TITLE
-    $ yarn install
+    $ git clone https://github.com/almadrasa/miniPsmplx
+    $ cd miniPsmplx
+    $ npm install
 
 ## Configure app
 
@@ -60,8 +44,4 @@ Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
 
 ## Running the project
 
-    $ yarn start
-
-## Simple build for production
-
-    $ yarn build
+    $ node index.js
